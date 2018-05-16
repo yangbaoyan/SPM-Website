@@ -1,4 +1,5 @@
 package com.example.entity;
+
 /***********************************************************************
  * Module:  Process.java
  * Author:  Administrator
@@ -6,18 +7,10 @@ package com.example.entity;
  ***********************************************************************/
 
 public class Process {
-    private Integer iD;
     private Float processCourse;
     private Float processVideo;
     private ChooseCourse chooseCourse;
 
-    public Integer getiD() {
-        return iD;
-    }
-
-    public void setiD(Integer iD) {
-        this.iD = iD;
-    }
 
     public Float getProcessCourse() {
         return processCourse;

@@ -1,23 +1,23 @@
 package com.example.entity;
+
+
+import com.jeff.tianti.common.entity.BaseEntity;
+
+import javax.persistence.*;
+
 /***********************************************************************
  * Module:  Student.java
  * Author:  Administrator
  * Purpose: Defines the Class Student
  ***********************************************************************/
 
-public class Student {
-    private Integer id;
+@Entity
+@Table(name = "student")
+public class Student extends BaseEntity{
     private String studentIndate;
     private UserInfo userInfo;
 
-    public Integer getId() {
-        return id;
-    }
-
-    public void setId(Integer id) {
-        this.id = id;
-    }
-
+    @Column(name = "student_indate")
     public String getStudentIndate() {
         return studentIndate;
     }
@@ -26,6 +26,8 @@ public class Student {
         this.studentIndate = studentIndate;
     }
 
+    @OneToOne
+    @JoinColumn(name = "userinfo_id")
     public UserInfo getUserInfo() {
         return userInfo;
     }

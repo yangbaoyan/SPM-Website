@@ -1,20 +1,26 @@
 package com.example.entity;
 
+
+import com.jeff.tianti.common.entity.BaseEntity;
+
+import javax.persistence.*;
+
 /***********************************************************************
  * Module:  UserInfo.java
  * Author:  Administrator
  * Purpose: Defines the Class UserInfo
  ***********************************************************************/
-
-public class UserInfo {
+@Entity
+@Table(name = "userinfo")
+public class UserInfo extends BaseEntity{
     private String userName;
-    private Integer userSex;
+    private String userSex;
     private String userEmail;
-    private Integer userTel;
+    private String userTel;
     private String userBirth;
-    private Integer iD;
     private User user;
 
+    @Column(name = "userinfo_name")
     public String getUserName() {
         return userName;
     }
@@ -23,14 +29,16 @@ public class UserInfo {
         this.userName = userName;
     }
 
-    public Integer getUserSex() {
+    @Column(name = "userinfo_sex")
+    public String getUserSex() {
         return userSex;
     }
 
-    public void setUserSex(Integer userSex) {
+    public void setUserSex(String userSex) {
         this.userSex = userSex;
     }
 
+    @Column(name = "userinfo_email")
     public String getUserEmail() {
         return userEmail;
     }
@@ -39,14 +47,16 @@ public class UserInfo {
         this.userEmail = userEmail;
     }
 
-    public Integer getUserTel() {
+    @Column(name = "userinfo_tel")
+    public String getUserTel() {
         return userTel;
     }
 
-    public void setUserTel(Integer userTel) {
+    public void setUserTel(String userTel) {
         this.userTel = userTel;
     }
 
+    @Column(name = "userinfo_birth")
     public String getUserBirth() {
         return userBirth;
     }
@@ -55,14 +65,8 @@ public class UserInfo {
         this.userBirth = userBirth;
     }
 
-    public Integer getiD() {
-        return iD;
-    }
-
-    public void setiD(Integer iD) {
-        this.iD = iD;
-    }
-
+    @OneToOne
+    @JoinColumn(name = "user_id")
     public User getUser() {
         return user;
     }

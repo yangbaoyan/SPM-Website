@@ -2,17 +2,8 @@ package com.example.entity;
 
 
 public class ChooseCourse {
-    private Integer iD;
     private Course course;
     private Student student;
-
-    public Integer getiD() {
-        return iD;
-    }
-
-    public void setiD(Integer iD) {
-        this.iD = iD;
-    }
 
     public Course getCourse() {
         return course;

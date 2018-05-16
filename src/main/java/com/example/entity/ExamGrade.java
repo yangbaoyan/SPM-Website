@@ -7,17 +7,8 @@ package com.example.entity;
  ***********************************************************************/
 
 public class ExamGrade {
-    private Integer id;
     private Exam exam;
     private Student student;
-
-    public Integer getId() {
-        return id;
-    }
-
-    public void setId(Integer id) {
-        this.id = id;
-    }
 
     public Exam getExam() {
         return exam;

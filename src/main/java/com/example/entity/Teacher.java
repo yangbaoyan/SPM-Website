@@ -1,23 +1,18 @@
 package com.example.entity;
+
+
+import com.jeff.tianti.common.entity.BaseEntity;
+
 /***********************************************************************
  * Module:  Teacher.java
  * Author:  Administrator
  * Purpose: Defines the Class Teacher
  ***********************************************************************/
 
-public class Teacher {
-    private Integer iD;
+public class Teacher extends BaseEntity {
     private String teacherIndate;
     private String teacherDuty;
     private UserInfo userInfo;
-
-    public Integer getiD() {
-        return iD;
-    }
-
-    public void setiD(Integer iD) {
-        this.iD = iD;
-    }
 
     public String getTeacherIndate() {
         return teacherIndate;

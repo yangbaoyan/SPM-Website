@@ -1,4 +1,5 @@
 package com.example.entity;
+
 /***********************************************************************
  * Module:  Video.java
  * Author:  Administrator
@@ -6,18 +7,9 @@ package com.example.entity;
  ***********************************************************************/
 
 public class Video {
-    private Integer id;
     private String videoAddress;
     private String videoTitle;
     private Exam exam;
-
-    public Integer getId() {
-        return id;
-    }
-
-    public void setId(Integer id) {
-        this.id = id;
-    }
 
     public String getVideoAddress() {
         return videoAddress;

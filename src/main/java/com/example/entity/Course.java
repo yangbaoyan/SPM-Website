@@ -1,5 +1,7 @@
 package com.example.entity;
 
+import com.jeff.tianti.common.entity.BaseEntity;
+
 import java.util.Collection;
 import java.util.HashSet;
 import java.util.Iterator;
@@ -10,8 +12,7 @@ import java.util.Iterator;
  * Purpose: Defines the Class Course
  ***********************************************************************/
 
-public class Course {
-    private Integer iD;
+public class Course extends BaseEntity {
     private String courseName;
     private String courseIntroduction;
     private Collection<Video> video;
@@ -78,14 +79,6 @@ public class Course {
                 iter.remove();
             }
         }
-    }
-
-    public Integer getiD() {
-        return iD;
-    }
-
-    public void setiD(Integer iD) {
-        this.iD = iD;
     }
 
     public String getCourseName() {

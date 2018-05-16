@@ -7,7 +7,6 @@ package com.example.entity;
  ***********************************************************************/
 
 public class Grade {
-    private Integer iD;
     private Float gradeDaily;
     private Float gradeExam;
     private Float gradeTotal;
@@ -15,13 +14,6 @@ public class Grade {
     private ExamGrade examGrade;
     private ChooseCourse chooseCourse;
 
-    public Integer getiD() {
-        return iD;
-    }
-
-    public void setiD(Integer iD) {
-        this.iD = iD;
-    }
 
     public Float getGradeDaily() {
         return gradeDaily;

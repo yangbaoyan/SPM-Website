@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>软件项目管理在线学习网站首页</title>
+
+    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+
+   
+    <link href="css/navbar.css" rel="stylesheet">
+	<link href="css/body.css" rel="stylesheet">
+  </head>
+
+  <body>
+	<!--顶部-->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">在线学习网站</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="index.html">首页</a></li>
+            <li><a href="stu-course.html">选课管理</a></li>
+            <li><a href="grade.html">成绩查询</a></li>
+			<li><a href="tea-course.html">教师课程管理</a></li>
+			<li><a href="test.html">测试题</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">信息管理<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+			  <li class="dropdown-header">信息管理</li>
+                <li><a href="userInfo.html">个人信息修改</a></li>
+                <li><a href="searchCourse.html">学生课程查询</a></li>
+                <li role="separator" class="divider"></li>
+				
+                <li class="dropdown-header">练习</li>
+                <li><a href="inputGrade.html">成绩录入</a></li>
+                <li><a href="inputTest.html">测试题录入</a></li>
+				
+				 <li role="separator" class="divider"></li>
+				<li class="dropdown-header">视频</li>
+                <li><a href="uploadVideo.html">视频上传</a></li>
+                <li><a href="watchVideo.html">观看视频</a></li>
+              </ul>
+            </li>
+          </ul>
+		  <div class="dropdown-grids">
+					<a href="#" class="btn btn-primary" ><span>退出</span></a>
+				</div>
+		<div class="dropdown-grids">
+					<a class="btn btn-primary" href="#" data-toggle="modal" data-target="#register"><span>注册</span></a>
+				</div>
+		  <div class="dropdown-grids">
+					<a  class="btn btn-primary" href="#" data-toggle="modal" data-target="#login"><span>登陆</span></a>
+				</div>
+				
+      </div>
+	  
+        </div>
+	  <div class="container">
+		  <div id="login" class="modal fade" data-backdrop="false">
+          <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="modal-body">
+                      <button class="close" data-dismiss="modal">
+                          <span>&times;</span>
+                      </button>
+                  </div>
+                  <div class="modal-title">
+                      <h1 class="text-center">登录</h1>
+                  </div>
+                  <div class="modal-body">
+                      <form class="form-group" action="">
+                              <div class="form-group">
+                                  <label for="">学号/工号</label>
+                                  <input class="form-control" type="text" placeholder="">
+                              </div>
+                              <div class="form-group">
+                                  <label for="">密码</label>
+                                  <input class="form-control" type="password" placeholder="">
+                              </div>
+                              <div class="form-group">
+								  <label for="">类型</label>
+								  <label class="radio-inline">
+									<input type="radio" name="type-login" value="stu" checked>学生
+								  </label>
+								  <label class="radio-inline">
+									<input type="radio" name="type-login" value="tea">教师
+								  </label>
+								</div>
+                              <div class="text-right">
+                                  <button class="btn btn-primary" type="submit">登录</button>
+                                  <button class="btn btn-danger" data-dismiss="modal">取消</button>
+                             </div>
+                             <a href="" data-toggle="modal" data-dismiss="modal" data-target="#register">还没有账号？点我注册</a>
+                     </form>
+                 </div>
+             </div>
+         </div>
+     </div>
+</div>
+		<div class="container">
+		<div id="register" class="modal fade" data-backdrop="false" tabindex="-1">
+				  <div class="modal-dialog">
+					  <div class="modal-content">
+						  <div class="modal-body">
+							  <button class="close" data-dismiss="modal">
+								<span>&times;</span>
+							 </button>
+						 </div>
+						 <div class="modal-title">
+							 <h1 class="text-center">注册</h1>
+						 </div>
+						 <div class="modal-body">
+							 <form class="form-group" action="">
+									 <div class="form-group">
+										 <label for="">学号/工号</label>
+										 <input class="form-control" type="text" required="required" placeholder="请输入学号">
+									 </div>
+									 <div class="form-group">
+										 <label for="">密码</label>
+										 <input class="form-control" type="password" required="required" placeholder="至少6位字母或数字">
+									 </div>
+									 <div class="form-group">
+										 <label for="">再次输入密码</label>
+										 <input class="form-control" type="password" required="required" placeholder="至少6位字母或数字">
+									 </div>
+									 <div class="form-group">
+								  <label for="">类型</label>
+								  <label class="radio-inline">
+									<input type="radio" name="type-register" value="stu" required="required" checked>学生
+								  </label>
+								  <label class="radio-inline">
+									<input type="radio" name="type-register" required="required" value="tea">教师
+								  </label>
+								</div>
+									 <div class="form-group">
+										 <label for="">姓名</label>
+										 <input class="form-control" type="email" required="required" placeholder="请输入姓名">
+									 </div>
+									 <div class="form-group">
+										 <label for="">邮箱</label>
+										 <input class="form-control" type="text" placeholder="例如:123@123.com">
+									 </div>
+									 <div class="form-group">
+										 <label for="">电话</label>
+										 <input class="form-control" type="tel" placeholder="请输入电话号码">
+									 </div>
+									 <div class="form-group">
+										 <label for="">出生日期</label>
+										 <input class="form-control" type="date" placeholder="出生日期">
+									 </div>
+									 <div class="text-right">
+										 <button class="btn btn-primary" type="submit">提交</button>
+										 <button class="btn btn-danger" data-dismiss="modal">取消</button>
+									 </div>
+									 <a href="" data-toggle="modal" data-dismiss="modal" data-target="#login">已有账号？点我登录</a>
+							 </form>
+						 </div>
+					 </div>
+				 </div>
+			 </div>
+	      </div>
+    </nav>
+	
+	<div class="container" style="margin-top:60px;">
+	<div class=="row">
+		<div class="col-md-10">
+			<video style="width:800px;height:600px;box-shadow:0 0 10px 10px #46b8da;" controls autoplay>
+				<source src="videos/movie.mp4" type="video/mp4">
+				您的浏览器不支持 video 标签。
+			</video>
+		</div>
+	<div class="col-md-2" id="example-navbar-collapse">
+        <ul class="nav nav-pills nav-stacked">
+		<li class="active"><a href="#">第一节</a></li>
+		<li><a href="#">第二节</a></li>
+		<li><a href="#">第三节</a></li>
+		<li><a href="#">第四节</a></li>
+		<li><a href="#">第五节</a></li>
+</ul>
+	</div>
+	</div>
+	</div>
+	
+	
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="dist/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>

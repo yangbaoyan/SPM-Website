@@ -1,0 +1,37 @@
+#pagination #pagination-lg{
+    text-align:center;
+}
+
+#col-md-3{
+    width:200px;
+}
+img{
+    height:100%;
+    width:100%;
+    max-width:300px;
+    padding-bottom:10px;
+}
+
+#nav-header{
+    color:#00FFFF;
+}
+
+img:hover{
+    animation-name:zoom1;
+    animation-duration:0.5s;
+}
+
+@keyframes zoom1{
+	0%{transform: scale(1.0);}
+	100%{transform: scale(1.1);}
+}
+#container{
+    margin-top:20px;
+}
+#container #headername{
+    color:#337ab7;
+    font-weight:bold;
+    display:block;
+    padding:20px;
+    font-size:20px;
+}
