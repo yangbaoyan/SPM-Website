@@ -1,10 +1,10 @@
 package com.example.controller;
 
-import com.example.entity.Student;
 import com.example.service.StudentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.servlet.ModelAndView;
 
 @RestController
 public class IndexController {
@@ -12,8 +12,9 @@ public class IndexController {
     StudentService studentService;
 
     @RequestMapping("home")
-    public Student test() {
-        Student student = studentService.find("311501");
-        return student;
+    public ModelAndView home() {
+        ModelAndView modelAndView = new ModelAndView();
+        modelAndView.setViewName("index.html");
+        return modelAndView;
     }
 }
