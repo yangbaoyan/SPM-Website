@@ -22,6 +22,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>1.8</java.version>
+        <basedir>E:\GitHub\SPM website</basedir>
     </properties>
 
     <dependencies>
@@ -64,12 +65,28 @@
             <artifactId>commons-fileupload</artifactId>
             <version>1.3</version>
         </dependency>
+
+        <!-- commons-lang end -->
         <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-freemarker -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-freemarker</artifactId>
         </dependency>
-        <!-- commons-lang end -->
+        <dependency>
+            <groupId>com.jeff.tianti.common</groupId>
+            <artifactId>tianti-common</artifactId>
+            <version>1.0.0</version>
+            <scope>system</scope>
+            <systemPath>${basedir}/lib/tianti-common-1.0.0.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>com.jeff.tianti.org</groupId>
+            <artifactId>tianti-org</artifactId>
+            <version>1.0.0</version>
+            <scope>system</scope>
+            <systemPath>${basedir}/lib/tianti-org-1.0.0.jar</systemPath>
+        </dependency>
+
     </dependencies>
 
 
